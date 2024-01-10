@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/my-avatar.png" type="image/x-icon">
+  <title>portfolio</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      /* Set a minimum height to the container (adjust as needed) */
+    }
+
+    @media screen and (max-width: 850px) {
+      .container {
+        /* display: flex;
+              flex-direction: column; */
+        position: absolute;
+
+      }
+
+    }
+
+    @media screen and (max-width: 850px) {
+      nav {
+        width: 100%;
+        display: flex;
+
+        /* justify-content: center;
+              align-items: center; */
+      }
+    }
+
+    nav {
+      display: inline-block;
+      position: relative;
+      flex-direction: column;
+      /* background-color:gray; */
+      width: 100%;
+      /* font-size: 20px;
+            box-sizing: border-box; */
+      text-align: left;
+      font-family: var(--ff-poppins);
+    }
+
+    nav h1 {
+      color: white;
+      font-family: var(--ff-poppins);
+      text-decoration: none;
+      font-size: 40px;
+      padding: 10px 3px;
+      margin: 0 5px 0px;
+      display: inline-block;
+    }
+
+    nav h1 span {
+      color: #ffdb70;
+    }
+
+    nav a {
+      color: #ffdb70;
+      margin-right: 1px;
+      /* float: right; */
+      font-family: var(--ff-poppins);
+      text-decoration: none;
+      font-size: 15px;
+      padding: 10px 30px;
+      margin: 15px 0px 1px;
+      display: inline-block;
+    }
+
+    nav a :hover {
+      color: gray;
+    }
+
+    /* Style for the text */
+    .text {
+      width: 55%;
+      box-sizing: border-box;
+
+    }
+
+    .text h2 {
+      font-style: var(--ff-poppins);
+      color: #ffdb70;
+      font-size: 300%;
+      /* text-shadow: 0 10px 10px #e9e9e9; */
+    }
+
+    .text p1 {
+      color: white;
+      font-size: 25px;
+      font-family: var(--ff-poppins);
+    }
+
+    .text a {
+      color: #ffdb70;
+      text-decoration: none;
+      background: grey;
+      font-size: 100%;
+      width: max-content;
+      padding: 10px 12px;
+      border-radius: 8px;
+    }
+
+    /* Style for the image */
+    .image img {
+      width: 400;
+      padding-left: 10%;
+      box-sizing: border-box;
+      border-radius: 50%;
+      /* Make the image circular */
+      overflow: hidden;
+    }
+
+    /* Optional: Add some styling for better appearance */
+    body {
+      background-image: url('./assets/images/wallpaper2.jpg');
+      /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
+      background-size: cover;
+      /* You can use other values like 'contain' or specific dimensions */
+      background-position: right;
+      /* You can adjust the position as needed */
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: block;
+      font-family: Arial, sans-serif;
+
+    }
+
+    .navbar-links {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar-right{
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .navbar-links li {
+      margin: 0 15px;
+      /* color: black; */
+    }
+
+    .navbar-links a {
+      text-decoration: none;
+      color: #ffdb70;
+    }
+    @media screen and (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        text-align: center;
+    }
+  }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar-links" id="navbarLinks">
+    <div class="navbar-left">
+      <h1>port<span>fol</span>io</h1>
+    </div>
+    <div class="navbar-right">      
+      <li><a href="/index.html?id=contact"><b>CONTACT</b></a></li>
+      <li><a href="/index.html?id=portfolio"><b>PORTFOLIO</b></a></li>
+      <li><a href="/index.html?id=resume"><b>RESUME</b></a></li>
+      <li><a href="/index.html?id=about"><b>ABOUT</b></a></li>
+      <li><a href="/home.html"><b>HOME</b></a></li>
+      <a href=""></a>
+    </div>
+
+
+
+  </nav>
+
+  <div class="container">
+    <div class="navigation">
+
+    </div>
+    <div class="text">
+      <h2>BHARANIDHARAN A</h2>
+      <p1>"Hello! I'm Bharanidharan, a passionate professional exploring the realms of web design, networking, and
+        programming. My journey in crafting captivating digital experiences includes mastery in HTML, CSS, and
+        WordPress, where I've woven creativity and functionality into diverse web designs. Alongside, my fascination
+        with networking led me to pursue and achieve a CCNA certification, deepening my understanding of network
+        infrastructure and protocols...</p1><br><br><br>
+      <a href="index.html" class="button">More About me...</a>
+    </div>
+    <div class="image">
+      <img src="./assets/images/IMG_20220718_100518_737-1.jpg" alt="Your Image" width="350">
+    </div>
+  </div>
+
+</body>
+
+</html>
